@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play.N</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico ">
+    <!-- ===== CSS Files ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styleInner.css">
+    <!-- Style Switcher -->
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" >
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="css/style-switcher.css">
+</head>
+
+<body class="dark">
+    <!-- ===== Main container start ===== -->
+    <div class="main-container">
+        <!-- ===== Header start ===== -->
+        <div class="header activatedH" id="header">
+            <div class="logo">
+                <a href="#"><span>Play</span></a>
+            </div>
+            <div class="nav-toggler"><span></span></div>
+            <ul class="nav">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="playStation.html">PS</a></li>
+                <li><a href="xbox.html">XBox</a></li>
+                <li><a href="nintendo.html" class="active">Ntnd</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <!-- ===== Style switcher start ===== -->
+            <div class="style-switcher ">
+                <div class="style-switcher-toggler s-icon">
+                    <i class="fas fa-cog"></i>
+                </div>
+                <div class="day-night s-icon">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <h4>Theme Colors</h4>
+                <div class="colors">
+                    <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+                    <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+                    <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+                    <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+                    <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+                </div>
+            </div>
+            <!-- ===== Style switcher end ===== -->
+        </div>
+        <!-- ===== Header end ===== -->
+        <!-- ===== Main content start ===== -->
+        <div class="main-content">
+            <video id="video"
+                src="./images/videos/Super Mario Odyssey - Рекламный ролик (Nintendo Switch) (720p).mp4" loop
+                autoplay muted></video>
+            <div class="cardContainer">
+                <div onclick="location.href='#Company';setTimeout(removeAct, 10);" class="cardType2" id="1" onmouseenter='changeTo("1")' onmouseleave='changeFrom()'
+                    style="background:url(./images/psCard.jpg);background-position: center;">
+                    <h3>Nintendo</h3>
+                    <p>Краткая сводка об истории формирования и последних достижениях компании</p>
+                </div>
+                <div onclick="location.href='#Tech';setTimeout(removeAct, 10);" class="cardType2" id='2' onmouseenter='changeTo("2")'
+                    onmouseleave='changeFrom()'
+                    style="background:url(./images/nintendoInner.jpg);">
+                    <h3>Technologies</h3>
+                    <p>Информация о технологических достижениях и последжних выпусках компании</p>
+                </div>
+                <div onclick="location.href='#Games';setTimeout(removeAct, 10);" class="cardType2" id='3' onmouseenter='changeTo("3")'
+                    onmouseleave='changeFrom()'
+                    style="background:url(./images/psCard3.jpg);background-position: center;">
+                    <h3>Nintendo Games</h3>
+                    <p>То, ради чего трудятся в Nintendo - информация о новинках в игровой индустрии</p>
+                </div>
+            </div>
+
+            <h1 id = "Company" style="color:rgb(59, 66, 61)">Nintendo</h1>
+            <div class="row">
+                <div>
+                    <p>
+                        <img id="img1" src="./images/640px-Headquarters_of_Nintendo_Co.,_Ltd.jpg" alt="" style="border-radius:2px; float:right; margin-left:0.5vmin">
+                        Nintendo — японская компания, специализирующаяся на создании видеоигр и игровых систем, со штаб-квартирой в Киото. Компания была основана в 1889 году ремесленником Фусадзиро Ямаути под названием Nintendo Karuta и первоначально производила игральные карты ручной работы «ханафуда». В 1960-х годах Nintendo начала заниматься другими видами бизнеса и приобрела юридический статус публичной компании под нынешним названием, а в 1977 году выпустила Color TV-Game, свою первую игровую приставку. Компания получила международное признание после выпуска игры Donkey Kong в 1981 году, а также игровой системы Nintendo Entertainment System и игры Super Mario Bros. в 1985 году.
+
+С тех пор Nintendo выпустила несколько самых успешных игровых систем, таких как Game Boy, Super Nintendo Entertainment System, Nintendo DS, Wii и Nintendo Switch. Компания создала множество крупных франшиз, таких как Mario, Donkey Kong, The Legend of Zelda, Pokémon, Kirby, Metroid, Fire Emblem, Animal Crossing, Splatoon, Star Fox, Xenoblade Chronicles и Super Smash Bros. 
+                    </p>
+                </div>
+            </div>
+            <h1 id = "Tech" style="margin-top: 3vmin;color:rgb(59, 66, 61)" >Nintendo Technologies</h1>
+            <div class="row">
+                <div>
+                    <p>
+                        <img id ="img2" src="./images/imgonline-com-ua-Resize-ewnAKIt6mLOsz.jpg" alt="" style="border-radius:2px; float:left; margin-right:0.5vmin">
+                    Запатентована новая технология! 
+
+                    Технология масштабирования изображения основана на использовании нейросетей. Предполагается, что исходное изображение будет разделяться на отдельные кадры, которые будут обрабатываться системой на основе машинного обучения. Разрешение в итоге будет повышаться до заданного значения — например, с 480p до 1080p или с 720p до 4K.
+                    
+                    Масштабирование, как отметили разработчики, может работать в том числе с использованием тензорных ядер NVIDIA или иных аналогичных технологий.
+                    Второй патент, опубликованный Nintendo, содержит описание технологии, напоминающей Quick Resume — одну из особенностей Xbox Series X|S. Это быстрое переключение между играми, которое позволяет игроку продолжить прохождение с того же места, на котором он остановился при переходе в другую игру.
+                    </p>
+                </div>
+            </div>
+            <h1 id = "Games" style="margin-top: 3vmin; color:rgb(59, 66, 61)">Nintendo Games</h1>
+            <div class="cardContainer">
+                <div onclick="location.href='https://www.nintendo.ru/-/-Nintendo/-Super-Mario/-Super-Mario-627604.html'" class="cardType2" id="1" onmouseenter='this.style.filter="brightness(1)"' onmouseleave='this.style.filter="brightness(0.7)"'
+                    style="background:url(./images/n1.jpg);background-position: center;filter:brightness(0.7)">
+                    <h3 style="margin-top:25%">Super Mario</h3>
+                </div>
+                <div onclick="location.href='https://www.igromania.ru/game/381980/It_Takes_Two.html'" class="cardType2" id='2' onmouseenter='this.style.filter="brightness(1)"' onmouseleave='this.style.filter="brightness(0.7)"'
+                    style="background:url(./images/n2.png);background-position: center;filter:brightness(0.7)">
+                    <h3 style="margin-top:25%">It Takes Two</h3>
+                </div>
+                <div onclick="location.href='https://www.nintendo.ru/-/-Nintendo-Switch/Animal-Crossing-New-Horizons-1438623.html'" class="cardType2" id='3' onmouseenter='this.style.filter="brightness(1)"' onmouseleave='this.style.filter="brightness(0.7)"'
+                    style="background:url(./images/n3.jpg);background-position: center;filter:brightness(0.7)">
+                    <h3 style="margin-top:25%">Animal Crossing</h3>
+                </div>
+                <div onclick="location.href='https://www.nintendo.ru/-/-Nintendo-Switch/Splatoon-3-1924751.html'" class="cardType2" id='3' onmouseenter='this.style.filter="brightness(1)"' onmouseleave='this.style.filter="brightness(0.7)"'
+                    style="background:url(./images/n4.jpg);background-position: center;filter:brightness(0.7)">
+                    <h3 style="margin-top:25%">Splatoon</h3>
+                </div>
+            </div>
+        </div>
+        <!-- ===== Main content end ===== -->
+        <!-- ===== Comment form start ===== -->
+        <form class="commentForm" method="post" action="registration.html">
+            <div class="commentFormLegend">
+                <h3>Leave yout comments❤️</h3>
+            </div>
+            <div class="commentFormName"> <input type="text" id="username" placeholder="Name"></div>
+            <div class="commentFormSurname"> <input type="text" id="surname" placeholder="Surname"></div>
+            <textarea cols="19" required minlength="0" maxlength="200" rows="3" placeholder="i love Nintendo!"></textarea>
+            <button type="submit">submit</button>
+        </form>
+        <!-- ===== Comment form end ===== -->
+        <!-- ===== Footer start ===== -->
+        <div class="footer">
+            <div class="logo">
+                <a href="#"><span>Play</span></a>
+            </div>
+            <div class="quote">
+                <span><span class="footer-typing"></span> — лучшая приставка!</span>
+            </div>
+            <div class="buttons-holder container">
+                <div class="row">
+                    <a href="#" class="private-policy"><span></span>Private Policy</a>
+                    <a href="#" class="socials"><span></span>Socials</a>
+                    <a href="#" class="faq"><span></span>FAQ</a>
+                    <a href="#" class="commercial"><span></span>Commercial</a>
+                    <a href="#" class="more-about"><span></span>More about us</a>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- ===== Footer end ===== -->
+    </div>
+    <!-- ===== Main container end ===== -->
+
+    <!-- ===== JS Files ===== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+        referrerpolicy="no-referrer"></script>
+    <script src="js/typing-script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/style-switcher.js"></script>
+    <script src="js/jsInner.js"></script>
+</body>
+
+</html>

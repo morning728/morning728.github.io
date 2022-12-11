@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play.Reg</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico ">
+    <!-- ===== CSS Files ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="css/registration.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Style Switcher -->
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" >
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="css/style-switcher.css">
+
+</head>
+
+<body class="dark">
+    <!-- ===== Main container start ===== -->
+    <div class="main-container">
+        <!-- ===== Header start ===== -->
+        <div class="header">
+            <div class="logo">
+                <a href="#"><span>Play</span></a>
+            </div>
+            <div class="nav-toggler" onclick="document.getElementById('nav').classList.toggle('activated');"><span></span></div>
+            <ul class="nav" id="nav">
+                <div class="nav-toggler" onclick="document.getElementById('nav').classList.toggle('activated');" style="margin-top:25px ;"><span></span></div>
+                <li><a href="index.html"  id="mainNav">Home</a></li>
+                <li><a href="playStation.html">PS</a></li>
+                <li><a href="xbox.html">XBox</a></li>
+                <li><a href="nintendo.html">Ntnd</a></li>
+                <li><a href="login.html" class="active">Login</a></li>
+            </ul>
+            <!-- ===== Style switcher start ===== -->
+            <div class="style-switcher ">
+                <div class="style-switcher-toggler s-icon">
+                    <i class="fas fa-cog"></i>
+                </div>
+                <div class="day-night s-icon">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <h4>Theme Colors</h4>
+                <div class="colors">
+                    <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+                    <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+                    <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+                    <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+                    <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+                </div>
+            </div>
+            <!-- ===== Style switcher end ===== -->
+        </div>
+        <!-- ===== Header end ===== -->
+        <!-- ===== Main content start ===== -->
+        <div class="main-content">
+        <form method="post" class="formHolder">
+            <fieldset>
+                <div class="container">
+                    <legend class="RegistrLegend">Registration Form</legend>
+                    <div class="row">
+                        <div>
+                            <input type="text" id="loginInput" placeholder=" first name">
+                        </div>
+                        <div>
+                            <input type="text" id="loginInput" placeholder=" second name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <input type="text" id="loginInput" placeholder=" login">
+                        </div>
+                        <div>
+                            <input type="password" id="loginInput" placeholder=" password">
+                        </div>
+                    </div>
+                    <div>
+                        <button type="submit" class="submitRegisterButton">submit</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+        <!-- ===== Main content end ===== -->
+
+        <!-- ===== Footer start ===== -->
+        <div class="footer">
+            <div class="logo">
+                <a href="#"><span>Play</span></a>
+            </div>
+            <div class="quote">
+                <span><span class="footer-typing"></span> — лучшая приставка!</span>
+            </div>
+            <div class="buttons-holder container">
+                <div class="row">
+                    <a href="#" class="private-policy"><span></span>Private Policy</a>
+                    <a href="#" class="socials"><span></span>Socials</a>
+                    <a href="#" class="faq"><span></span>FAQ</a>
+                    <a href="#" class="commercial"><span></span>Commercial</a>
+                    <a href="#" class="more-about"><span></span>More about us</a>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- ===== Footer end ===== -->
+    </div>
+    <!-- ===== Main container end ===== -->
+
+    <!-- ===== JS Files ===== -->
+        <!-- ===== JS Files ===== -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+        referrerpolicy="no-referrer"></script>
+    <script src="js/typing-script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/style-switcher.js"></script>
+</body>
+
+</html>

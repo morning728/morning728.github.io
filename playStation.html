@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play.PS</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico ">
+    <!-- ===== CSS Files ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styleInner.css">
+    <!-- Style Switcher -->
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4">
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="css/style-switcher.css">
+</head>
+
+<body class="dark">
+    <!-- ===== Main container start ===== -->
+    <div class="main-container">
+        <!-- ===== Header start ===== -->
+        <div class="header activatedH" id="header">
+            <div class="logo">
+                <a href="#"><span>Play</span></a>
+            </div>
+            <div class="nav-toggler"><span></span></div>
+            <ul class="nav">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="playStation.html" class="active">PS</a></li>
+                <li><a href="xbox.html">XBox</a></li>
+                <li><a href="nintendo.html">Ntnd</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <!-- ===== Style switcher start ===== -->
+            <div class="style-switcher ">
+                <div class="style-switcher-toggler s-icon">
+                    <i class="fas fa-cog"></i>
+                </div>
+                <div class="day-night s-icon">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <h4>Theme Colors</h4>
+                <div class="colors">
+                    <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+                    <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+                    <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+                    <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+                    <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+                </div>
+            </div>
+            <!-- ===== Style switcher end ===== -->
+        </div>
+        <!-- ===== Header end ===== -->
+        <!-- ===== Main content start ===== -->
+        <div class="main-content">
+            <div id="vidDiv" style="height:100vh;overflow:hidden">
+                <video id="video"
+                    src="./images/videos/Call of Duty Modern Warfare II - Next Gen Immersion Trailer PS5 Games.mp4" loop
+                    autoplay muted></video>
+            </div>
+            <div class="cardContainer">
+                <div onclick="location.href='#Company';setTimeout(removeAct, 10);" class="cardType2" id="1" onmouseenter='changeTo("1")' onmouseleave='changeFrom()'
+                    style="background:url(./images/psCard.jpg);background-position: center;">
+                    <h3>PlayStation Company</h3>
+                    <p>Краткая сводка об истории формирования и последних достижениях компании</p>
+                </div>
+                <div onclick="location.href='#Tech';setTimeout(removeAct, 10);" class="cardType2" id='2' onmouseenter='changeTo("2")'
+                    onmouseleave='changeFrom()'
+                    style="background:url(./images/psCard2.jpg);background-position: center;">
+                    <h3>Technologies</h3>
+                    <p>Информация о технологических достижениях и последжних выпусках компании</p>
+                </div>
+                <div onclick="location.href='#Games';setTimeout(removeAct, 10);" class="cardType2" id='3' onmouseenter='changeTo("3")'
+                    onmouseleave='changeFrom()'
+                    style="background:url(./images/psCard3.jpg);background-position: center;">
+                    <h3>PS Games</h3>
+                    <p>То, ради чего трудятся в PS Company - информация о новинках в игровой индустрии</p>
+                </div>
+            </div>
+
+            <h1 id = "Company">Sony PlayStation Company</h1>
+            <div class="row">
+                <div>
+                    <p>
+                        <img id="img1" src="./images/640px-Sony_Interactive_Entertainment_San_Mateo.jpg" alt="" style="border-radius:2px; float:right; margin-left:0.5vmin">
+
+                        PlayStation (дословно — «Игровая станция») — бренд, принадлежащий Sony Interactive Entertainment и включающий в себя серию стационарных и портативных игровых консолей (также используемых как домашние кинотеатры), игровых контроллеров и онлайн-сервисов. Первая модель игровой приставки была выпущена в декабре 1994 года в Японии.
+
+                        Первой консоли PlayStation менее чем за десять лет удалось быстрее всех в истории cреди игровых приставок достигнуть отметки в 100 миллионов проданных единиц. Её преемница, PlayStation 2, была выпущена в 2000 году. Эта консоль стала самой продаваемой игровой приставкой в истории на данный момент: к концу 2012 года она была продана более 155 миллионов раз, а к середине 2020 уже более 157 миллионов. Следующая консоль Sony, PlayStation 3, была выпущена в 2006 году. К марту 2017 года было продано более 87 миллионов этих устройств. PlayStation 4 была выпущена в 2013 году. В первый же день после запуска продаж данной консоли её приобрело более одного миллиона человек. Следующая консоль в данной серии, PlayStation 5, вышла в ноябре 2020 года, и на момент февраля 2022 года было куплено 18 миллионов копий. 
+                    </p>
+                </div>
+            </div>
+            <h1 id = "Tech" style="margin-top: 3vmin;">Sony Technologies</h1>
+            <div class="row">
+                <div>
+                    <p>
+                        <img id ="img2" src="./images/imgonline-com-ua-Resize-R0ac3SoULjNJA.jpg" alt="" style="border-radius:2px; float:left; margin-right:0.5vmin">
+                        Во-первых, герцовка. Чем больше частота обновления, тем плавнее геймплей — это особенно важно для мультиплеерных шутеров, гонок и аркад, где на экране все «мельтешит», а исход игры может решить один выстрел в нужный момент. И важно этот момент не пропустить из-за «тормозов». Сегодня разработчики игр для консолей не зацикливаются на «кинематографических» 30 FPS. Как минимум они предлагают выбрать определенные настройки графики для комфортной игры в 60 FPS, а то и вовсе разгоняются до 120. Во-вторых, разрешение. сейчас сложно найти игру, которая в том или ином виде не поддерживает 4К или не стремится к нему. Где-то можно встретить нативное разрешение, где-то разработчики используют апскейлинг (аппаратное масштабирование до более высокого разрешения) и другие хитрости, чтобы вывести максимально четкое изображение. И, конечно, трассировка. Трассировка лучей (ray tracing) неспроста считается одной из самых передовых технологий, которая используется текущим поколением консолей. Этот способ рендеринга света и теней делает отражения и освещение по-настоящему реалистичными — можно надолго зависнуть, разглядывая модели в стеклах и даже в небольших лужицах.
+                    </p>
+                </div>
+            </div>
+            <h1 id = "Games" style="margin-top: 3vmin;">Sony Games</h1>
+            <div class="cardContainer">
+                <div onclick="location.href='https://store.playstation.com/ru-ua/product/EP9000-CUSA00002_00-KZ4RELEASE000041'" class="cardType2" id="1" onmouseenter='this.style.filter="brightness(1)"' onmouseleave='this.style.filter="brightness(0.7)"'
+                    style="background:url(./images/ps1.jpg);background-position: center;filter:brightness(0.7)">
+                    <h3 style="margin-top:25%">KILLZONE SHADOW FALL</h3>
+                </div>
+                <div onclick="location.href='https://dtf.ru/games/230692-driveclub-2020-chto-predstavlyaet-soboy-igra-segodnya'" class="cardType2" id='2' onmouseenter='this.style.filter="brightness(1)"' onmouseleave='this.style.filter="brightness(0.7)"'
+                    style="background:url(./images/ps2.jpg);background-position: center;filter:brightness(0.7)">
+                    <h3 style="margin-top:25%">DRIVECLUB </h3>
+                </div>
+                <div onclick="location.href='https://store.steampowered.com/app/1259420/Days_Gone/'" class="cardType2" id='3' onmouseenter='this.style.filter="brightness(1)"' onmouseleave='this.style.filter="brightness(0.7)"'
+                    style="background:url(./images/ps3.jpg);background-position: center;filter:brightness(0.7)">
+                    <h3 style="margin-top:25%">Days Gone</h3>
+                </div>
+                <div onclick="location.href='https://www.playstation.com/ru-ru/god-of-war/'" class="cardType2" id='3' onmouseenter='this.style.filter="brightness(1)"' onmouseleave='this.style.filter="brightness(0.7)"'
+                    style="background:url(./images/ps4.jpg);background-position: center;filter:brightness(0.7)">
+                    <h3 style="margin-top:25%">God Of War</h3>
+                </div>
+                <div onclick="location.href='https://store.steampowered.com/app/1151640/Horizon_Zero_Dawn_Complete_Edition/'" class="cardType2" id='3' onmouseenter='this.style.filter="brightness(1)"' onmouseleave='this.style.filter="brightness(0.7)"'
+                    style="background:url(./images/ps5.jpg);background-position: center;filter:brightness(0.7)">
+                    <h3 style="margin-top:25%">Horizon</h3>
+                </div>
+                <div onclick="location.href='https://store.steampowered.com/agecheck/app/1245620/'" class="cardType2" id='3' onmouseenter='this.style.filter="brightness(1)"' onmouseleave='this.style.filter="brightness(0.7)"'
+                    style="background:url(./images/ps6.jpg);background-position: center;filter:brightness(0.7)">
+                    <h3 style="margin-top:25%">Elden Ring</h3>
+                </div>
+            </div>
+        </div>
+        <!-- ===== Main content end ===== -->
+        <!-- ===== Comment form start ===== -->
+        <form class="commentForm" method="post" action="registration.html">
+            <div class="commentFormLegend">
+                <h3>Leave yout comments❤️</h3>
+            </div>
+            <div class="commentFormName"> <input type="text" id="username" placeholder="Name"></div>
+            <div class="commentFormSurname"> <input type="text" id="surname" placeholder="Surname"></div>
+            <textarea cols="19" required minlength="0" maxlength="200" rows="3" placeholder="i love PlayStation!"></textarea>
+            <button type="submit">submit</button>
+        </form>
+        <!-- ===== Comment form end ===== -->
+        <!-- ===== Footer start ===== -->
+        <div class="footer">
+            <div class="logo">
+                <a href="#"><span>Play</span></a>
+            </div>
+            <div class="quote">
+                <span><span class="footer-typing"></span> — лучшая приставка!</span>
+            </div>
+            <div class="buttons-holder container">
+                <div class="row">
+                    <a href="#" class="private-policy"><span></span>Private Policy</a>
+                    <a href="#" class="socials"><span></span>Socials</a>
+                    <a href="#" class="faq"><span></span>FAQ</a>
+                    <a href="#" class="commercial"><span></span>Commercial</a>
+                    <a href="#" class="more-about"><span></span>More about us</a>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- ===== Footer end ===== -->
+    </div>
+    <!-- ===== Main container end ===== -->
+
+    <!-- ===== JS Files ===== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+        referrerpolicy="no-referrer"></script>
+    <script src="js/typing-script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/style-switcher.js"></script>
+    <script src="js/jsInner.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico ">
+    <!-- ===== CSS Files ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Style Switcher -->
+    <link rel="stylesheet" href="css/skins/color-0.css" class="alternate-style" title="color-0">
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="css/style-switcher.css">
+</head>
+
+<body class="dark">
+    <!-- ===== Main container start ===== -->
+    <div class="main-container">
+        <!-- ===== Header start ===== -->
+        <div class="header">
+            <div class="logo">
+                <a href="#"><span>Play</span></a>
+            </div>
+            <div class="nav-toggler" onclick="document.getElementById('nav').classList.toggle('activated');">
+                <span></span></div>
+            <ul class="nav" id="nav">
+                <div class="nav-toggler" onclick="document.getElementById('nav').classList.toggle('activated');"
+                    style="margin-top:25px ;"><span></span></div>
+                <li><a href="#" class="active" id="mainNav">Home</a></li>
+                <li><a href="playStation.html">PS</a></li>
+                <li><a href="xbox.html">XBox</a></li>
+                <li><a href="nintendo.html">Ntnd</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <!-- ===== Style switcher start ===== -->
+            <div class="style-switcher ">
+                <div class="style-switcher-toggler s-icon">
+                    <i class="fas fa-cog"></i>
+                </div>
+                <div class="day-night s-icon">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <h4>Theme Colors</h4>
+                <div class="colors">
+                    <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+                    <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+                    <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+                    <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+                    <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+                </div>
+            </div>
+            <!-- ===== Style switcher end ===== -->
+        </div>
+        <!-- ===== Header end ===== -->
+        <!-- ===== Main content start ===== -->
+        <div class="main-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2>Игровые консоли</h2>
+
+                        <p> <span></span> PS5 предлагает не просто значительно выросшую производительность в сравнении с консолью прошлого поколения, но еще и замечательные игры, в том числе эксклюзивные – что немаловажно для значительной части аудитории.
+
+                            Именно на игры делает ставку Sony, и ее новейшая консоль предлагает действительно выдающиеся тайтлы, в числе которых такие хиты, как ремейк Demon’s Souls, Returnal, Ratchet & Clank: Rift Apart, Marvel’s Spider-Man: Miles Morales, Horizon: Forbiden West, Gran Turismo 7 и многие другие.
+                            
+                            Кроме того, PlayStation 5 воспроизводит игры в 4K разрешении с частотой кадров до 120 fps, обеспечивает сверхбыстрые загрузки с SSD, а контроллер DualSense заставляет ощутить совершенно новые эмоции в играх за счет тактильной обратной связи и адаптивных триггеров.
+                            
+                            Несмотря на то, что дизайн консоли получился неоднозначным и не устраивает поклонников минимализма, по всем остальным параметрам это отличная консоль.
+                            <img src="images/main1.jpg" alt="">
+                            <span></span>Xbox Series X – самая мощная консоль. Не только на бумаге, но и в реальных задачах: она мощнее, чем PS5, и в ряде мультиплатформенных проектов обеспечивает ненамного, но все же лучшую производительность с более высоким разрешением картинки и стройным графиком частоты кадров в секунду.
+
+Кроме того, Series X способна похвастать лаконичным дизайном, который впишется буквально в любой интерфейс. Согласно философии Microsoft, консоль не должна отвлекать пользователя от игр, и Xbox Series X выполняет именно эту задачу – она тихая и незаметная, в отличие от PS5, которая сразу же притягивает к себе внимание.
+
+Еще один козырь консоли – огромнейшая библиотека бесплатных игр, доступных в рамках подписки Xbox Game Pass, куда входят как эксклюзивы, так и тайтлы от сторонних издателей. Фанаты ретрогейминга наверняка обрадуются обратной совместимости с играми Xbox One, Xbox 360 и Xbox, причем многие из них предлагаются с улучшенной графикой и fps.
+                        </p>
+                        <div class="cardContainer">
+                            <div onclick="location.href='nintendo.html';" class="cardType2" id="1"
+                                onmouseenter='changeTo("1")' onmouseleave='changeFrom()'
+                                style="background:url(./images/nintendo.png);background-position: center;">
+                                <h3>NINTENDO</h3>
+                                <p style="font-size: 3rem;
+                                text-align: center;color:rgb(91, 80, 80)">Get N or get out.</p>
+                            </div>
+                            <div onclick="location.href='playStation.html';" class="cardType2" id='2'
+                                onmouseenter='changeTo("2")' onmouseleave='changeFrom()'
+                                style="background:url(./images/ps.jpg)">
+                                <h3>Play Station</h3>
+                                <p style="font-size: 3rem;
+                                text-align: center; color:rgb(91, 80, 80)">Play Has No Limits.</p>
+                            </div>
+                            <div onclick="location.href='xbox.html';" class="cardType2" id='3'
+                                onmouseenter='changeTo("3")' onmouseleave='changeFrom()'
+                                style="background:url(./images/xbox.jpg);background-position: center;">
+                                <h3>XBOX</h3>
+                                <p style="font-size: 3rem;
+                                text-align: center; color:rgb(91, 80, 80)">Games will never be the same</p>
+                            </div>
+                        </div>
+                        <p><span></span>С Nintendo Switch Lite практически такая же история, как с Xbox Series S: это младшая версия консоли, разработанная для тех, кто хочет сэкономить. При цене в две трети от Nintendo Switch, она предлагает пойти на некоторые компромиссы: так, ее нельзя подключить к телевизору, ее элементы управления не отсоединяются, а игроки могут рассчитывать только на разрешение 720р.
+
+                            Однако у этой консоли наиболее компактный форм-фактор и небольшой вес, а монолитная конструкция продлит ей срок работы, что особенно важно для портативного устройства.
+                            <img src="images/main2.jpg" alt="">
+                            <span></span>И бонус! Playdate – это портативная игровая консоль со специальной рукояткой, которая используется для некоторых игр, «прокручивая» их по экрану. Вместе с ней также используются крестовина и клавиши «А» и «В», а изображение выводится на монохромный 2,7-дюймовый дисплей с разрешением 400х240 пикселей. Кроме того, у консоли есть встроенный динамик, разъем 3,5 мм, модули Wi-Fi и Bluetooth, а под игры и ОС отведено 4 ГБ памяти.                        </p>
+
+                    </div>
+                    <!-- ===== Aside start ===== -->
+                    <div class="aside">
+                        <h3>Interesting articles</h3>
+                        <div class="container">
+                            <ul>
+                                <li><a href="https://www.igromania.ru/article/32277/Poigrali_v_Atomic_Heart_i_delimsya_vpechatleniyami!_Strah_i_roboty_v_SSSR.html" style="background: url(./images/imgonline-com-ua-Resize-zupRVWvcy4FpHCM2.jpg);background-position: center;background-size: cover;" ></a></li>
+                                <li><a href="https://www.igromania.ru/article/32278/Obzor_The_Callisto_Protocol._Sovsem_ne_myortvyy_kosmos.html" style="background: url(./images/imgonline-com-ua-Resize-n8gYZqHeiWqQZEs.jpg);background-position: center;background-size: cover;" ></a></li>
+                                <li><a href="https://www.rbc.ru/life/news/6384cf089a79475115f5d331" style="background: url(./images/imgonline-com-ua-Resize-ADwPMwBPkCin.jpg);background-position: center;background-size: cover;" ></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- ===== Aside end ===== -->
+                </div>
+            </div>
+
+        </div>
+        <!-- ===== Main content end ===== -->
+        <!-- ===== Comment form start ===== -->
+        <form class="commentForm" method="post" action="registration.html">
+            <div class="commentFormLegend">
+                <h3>Leave yout comments❤️</h3>
+            </div>
+            <div class="commentFormName"> <input type="text" id="username" placeholder="Name"></div>
+            <div class="commentFormSurname"> <input type="text" id="surname" placeholder="Surname"></div>
+            <textarea cols="19" required minlength="0" maxlength="200" rows="3" placeholder="i love Shlepa!"></textarea>
+            <button type="submit">submit</button>
+        </form>
+        <!-- ===== Comment form end ===== -->
+        <!-- ===== Footer start ===== -->
+        <div class="footer">
+            <div class="logo">
+                <a href="#"><span>Play</span></a>
+            </div>
+            <div class="quote">
+                <span><span class="footer-typing"></span> — лучшая приставка!</span>
+            </div>
+            <div class="buttons-holder container">
+                <div class="row">
+                    <a href="#" class="private-policy"><span></span>Private Policy</a>
+                    <a href="#" class="socials"><span></span>Socials</a>
+                    <a href="#" class="faq"><span></span>FAQ</a>
+                    <a href="#" class="commercial"><span></span>Commercial</a>
+                    <a href="#" class="more-about"><span></span>More about us</a>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- ===== Footer end ===== -->
+    </div>
+    <!-- ===== Main container end ===== -->
+
+    <!-- ===== JS Files ===== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+        referrerpolicy="no-referrer"></script>
+    <script src="js/typing-script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/style-switcher.js"></script>
+</body>
+
+</html>

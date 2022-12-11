@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play.X</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico ">
+    <!-- ===== CSS Files ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styleInner.css">
+    <!-- Style Switcher -->
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" >
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="css/style-switcher.css">
+</head>
+
+<body class="dark">
+    <!-- ===== Main container start ===== -->
+    <div class="main-container">
+        <!-- ===== Header start ===== -->
+        <div class="header activatedH" id="header">
+            <div class="logo">
+                <a href="#"><span>Play</span></a>
+            </div>
+            <div class="nav-toggler" onclick="document.getElementById('nav').classList.toggle('activated');">
+                <span></span></div>
+            <ul class="nav" id="nav">
+                <div class="nav-toggler" onclick="document.getElementById('nav').classList.toggle('activated');"
+                    style="margin-top:25px ;"><span></span></div>
+                <li><a href="index.html"  id="mainNav">Home</a></li>
+                <li><a href="playStation.html">PS</a></li>
+                <li><a href="xbox.html">XBox</a></li>
+                <li><a href="nintendo.html">Ntnd</a></li>
+                <li><a href="login.html" class="active">Login</a></li>
+            </ul>
+            <!-- ===== Style switcher start ===== -->
+            <div class="style-switcher ">
+                <div class="style-switcher-toggler s-icon">
+                    <i class="fas fa-cog"></i>
+                </div>
+                <div class="day-night s-icon">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <h4>Theme Colors</h4>
+                <div class="colors">
+                    <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+                    <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+                    <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+                    <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+                    <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+                </div>
+            </div>
+            <!-- ===== Style switcher end ===== -->
+        </div>
+        <!-- ===== Header end ===== -->
+        <!-- ===== Main content start ===== -->
+        <div class="main-content">
+            <video id="video"
+                src="./images/videos/Xbox Series X - World Premiere - 4K Trailer.mp4" loop
+                autoplay muted></video>
+            <div class="cardContainer">
+                <div onclick="location.href='#Company';setTimeout(removeAct, 10);" class="cardType2" id="1" onmouseenter='changeTo("1")' onmouseleave='changeFrom()'
+                    style="background:url(./images/psCard.jpg);background-position: center;">
+                    <h3>Microsoft</h3>
+                    <p>Краткая сводка об истории формирования и последних достижениях компании</p>
+                </div>
+                <div onclick="location.href='#Tech';setTimeout(removeAct, 10);" class="cardType2" id='2' onmouseenter='changeTo("2")'
+                    onmouseleave='changeFrom()'
+                    style="background:url(./images/xboxinner.jpg);background-position: center;">
+                    <h3>Technologies</h3>
+                    <p>Информация о технологических достижениях и последжних выпусках компании</p>
+                </div>
+                <div onclick="location.href='#Games';setTimeout(removeAct, 10);" class="cardType2" id='3' onmouseenter='changeTo("3")'
+                    onmouseleave='changeFrom()'
+                    style="background:url(./images/psCard3.jpg);background-position: center;">
+                    <h3>XBox Games</h3>
+                    <p>То, ради чего трудятся в Microsoft.XBox - информация о новинках в игровой индустрии</p>
+                </div>
+            </div>
+
+            <h1 id = "Company" style="color:rgb(59, 66, 61)">Microsoft</h1>
+            <div class="row">
+                <div>
+                    <p>
+                        <img id="img1" src="./images/640px-Building92microsoft.jpg" alt="" style="border-radius:2px; float:right; margin-left:0.5vmin">
+                        Microsoft Corporation — одна из крупнейших транснациональных компаний по производству проприетарного программного обеспечения для различного рода вычислительной техники — персональных компьютеров, игровых приставок, КПК, мобильных телефонов и прочего. Разработчик наиболее широко распространённой на данный момент в мире программной платформы — семейства операционных систем Windows.
+
+Подразделения компании производят семейство игровых консолей Xbox, а также аксессуары для персональных компьютеров (клавиатуры, мыши и т. д.). C 2012 года производит собственный планшетный компьютер — Surface. Продукция Microsoft продаётся более чем в 80 странах мира, программы переведены более чем на 45 языков.
+
+Штаб-квартира компании находится в городе Редмонд, штат Вашингтон, США.
+
+Штат сотрудников корпорации на 30 июня 2021 года составляет 181000 человек. В 2018 году заняла второе место в списке 500 лучших работодателей мира по мнению журнала Forbes. 
+                    </p>
+                </div>
+            </div>
+            <h1 id = "Tech" style="margin-top: 3vmin;color:rgb(59, 66, 61)" >XBox Technologies</h1>
+            <div class="row">
+                <div>
+                    <p>
+                        <img id ="img2" src="./images/xboxinner.jpg" alt="" style="border-radius:2px; float:left; margin-right:0.5vmin">
+                        «В Xbox Series X существенно выросла производительность графического процессора, а качество графики выходит на новый уровень благодаря таким новым возможностям, как трассировка лучей с аппаратным ускорением, — сказал Джейсон Рональд, директор по управлению продуктом (Director of Product Management) Xbox Series X. — Но мы не считаем, что главным в этом поколении консолей станет только графика или разрешение».По словам Нуссбаума, благодаря фокусу на трансформационном дизайне и повышении производительности в новом поколении «консоль превратится в настоящую площадку развития технологических инноваций». Во многом это будет связано с наличием специального 8-ядерного процессора AMD Zen 2 CPU и графической архитектуры RDNA 2-class GPU.
+                    </p>
+                </div>
+            </div>
+            <h1 id = "Games" style="margin-top: 3vmin; color:rgb(59, 66, 61)">XBox Games</h1>
+            <div class="cardContainer">
+                <div onclick="location.href='https://www.cyberpunk.net/us/ru/'" class="cardType2" id="1" onmouseenter='this.style.filter="brightness(1)"' onmouseleave='this.style.filter="brightness(0.7)"'
+                    style="background:url(./images/x1.jpg);background-position: center;filter:brightness(0.7)">
+                    <h3 style="margin-top:25%">Cyberpunk2077</h3>
+                </div>
+                <div onclick="location.href='https://www.ea.com/ru-ru/games/fifa/fifa-22'" class="cardType2" id='2' onmouseenter='this.style.filter="brightness(1)"' onmouseleave='this.style.filter="brightness(0.7)"'
+                    style="background:url(./images/x2.jpg);background-position: center;filter:brightness(0.7)">
+                    <h3 style="margin-top:25%">FIFA22 </h3>
+                </div>
+                <div onclick="location.href='https://www.igromania.ru/game/381741/Far_Cry_6.html'" class="cardType2" id='3' onmouseenter='this.style.filter="brightness(1)"' onmouseleave='this.style.filter="brightness(0.7)"'
+                    style="background:url(./images/x3.jpg);background-position: center;filter:brightness(0.7)">
+                    <h3 style="margin-top:25%">Far Cry 6</h3>
+                </div>
+                <div onclick="location.href='https://dyinglightgame.com/'" class="cardType2" id='3' onmouseenter='this.style.filter="brightness(1)"' onmouseleave='this.style.filter="brightness(0.7)"'
+                    style="background:url(./images/x4.jpg);background-position: center;filter:brightness(0.7)">
+                    <h3 style="margin-top:25%">Dying Light 2</h3>
+                </div>
+                <div onclick="location.href='https://www.gearsofwar.com/games/gears-tactics/'" class="cardType2" id='3' onmouseenter='this.style.filter="brightness(1)"' onmouseleave='this.style.filter="brightness(0.7)"'
+                    style="background:url(./images/x5.jpg);background-position: center;filter:brightness(0.7)">
+                    <h3 style="margin-top:25%">Gear Tactics</h3>
+                </div>
+                <div onclick="location.href='https://www.igromania.ru/game/31187/Assassin%27s_Creed_Valhalla.html'" class="cardType2" id='3' onmouseenter='this.style.filter="brightness(1)"' onmouseleave='this.style.filter="brightness(0.7)"'
+                    style="background:url(./images/x6.jpg);background-position: center;filter:brightness(0.7)">
+                    <h3 style="margin-top:25%">Assasin's creed: Valhalla</h3>
+                </div>
+            </div>
+        </div>
+        <!-- ===== Main content end ===== -->
+        <!-- ===== Comment form start ===== -->
+        <form class="commentForm" method="post" action="registration.html">
+            <div class="commentFormLegend">
+                <h3>Leave yout comments❤️</h3>
+            </div>
+            <div class="commentFormName"> <input type="text" id="username" placeholder="Name"></div>
+            <div class="commentFormSurname"> <input type="text" id="surname" placeholder="Surname"></div>
+            <textarea cols="19" required minlength="0" maxlength="200" rows="3" placeholder="i love XBox!"></textarea>
+            <button type="submit">submit</button>
+        </form>
+        <!-- ===== Comment form end ===== -->
+        <!-- ===== Footer start ===== -->
+        <div class="footer">
+            <div class="logo">
+                <a href="#"><span>Play</span></a>
+            </div>
+            <div class="quote">
+                <span><span class="footer-typing"></span> — лучшая приставка!</span>
+            </div>
+            <div class="buttons-holder container">
+                <div class="row">
+                    <a href="#" class="private-policy"><span></span>Private Policy</a>
+                    <a href="#" class="socials"><span></span>Socials</a>
+                    <a href="#" class="faq"><span></span>FAQ</a>
+                    <a href="#" class="commercial"><span></span>Commercial</a>
+                    <a href="#" class="more-about"><span></span>More about us</a>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- ===== Footer end ===== -->
+    </div>
+    <!-- ===== Main container end ===== -->
+
+    <!-- ===== JS Files ===== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+        referrerpolicy="no-referrer"></script>
+    <script src="js/typing-script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/style-switcher.js"></script>
+    <script src="js/jsInner.js"></script>
+</body>
+
+</html>
